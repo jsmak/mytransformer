@@ -12,7 +12,7 @@
 
 - 🧩 **단계별 모듈 분해 구현**: Scaled Dot-Product Attention부터 Multi-Head Attention, Positional Encoding, LayerNorm, FeedForward, Encoder/Decoder 스택까지 한 단계씩 점진적으로 조립
 - 🔍 **수식과 코드의 1:1 매핑**: 논문의 핵심 수식과 아키텍처 다이어그램(Figure 1, Figure 2)을 직접 파이토치 텐서 연산으로 시각화하며 검증
-- 🌐 **실제 번역 모델 실습**: Multi30k (독일어 $\rightarrow$ 영어) 데이터셋 기반 토큰화, 어휘 사전 구축, 패딩/마스킹, Greedy Decoding 및 SacreBLEU 점수 평가
+- 🌐 **실제 번역 모델 실습**: Multi30k (영어 $\rightarrow$ 독일어) 데이터셋 기반 토큰화, 어휘 사전 구축, 패딩/마스킹, Greedy Decoding 및 SacreBLEU 점수 평가
 
 ---
 
@@ -32,7 +32,7 @@ mytransformer/
 │   ├── 09_Encoder.ipynb                            # [구현] EncoderLayer & Encoder 전체 스택
 │   ├── 10_Decoder.ipynb                            # [구현] DecoderLayer & Masked Decoder 스택
 │   ├── 11_Transformer.ipynb                        # [구현] Full Transformer 아키텍처 완성
-│   ├── 99_MyTransformer.ipynb                      # [종합] Multi30k 독-영 번역 학습 & BLEU 평가
+│   ├── 99_MyTransformer.ipynb                      # [종합] Multi30k 영-독 번역 학습 & BLEU 평가
 │   └── multi30k_data.pkl                           # Multi30k 번역 데이터셋 (~5.88MB)
 ├── .gitignore
 ├── requirements.txt
